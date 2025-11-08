@@ -28,7 +28,6 @@ public class PaisServicio implements IPaisServicio {
 
   @Override
   public Pais guardar(Pais pais) {
-    pais.setId(0L);
     return paisRepositorio.save(pais);
   }
 

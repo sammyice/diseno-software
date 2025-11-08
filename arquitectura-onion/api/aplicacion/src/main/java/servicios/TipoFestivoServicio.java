@@ -18,7 +18,7 @@ public class TipoFestivoServicio implements ITipoFestivoServicio {
 
   @Override
   public List<TipoFestivo> listar() {
-    return tipoFestivoRepositorio.findAll();
+    return tipoFestivoRepositorio.listar();
   }
 
   @Override
@@ -28,7 +28,6 @@ public class TipoFestivoServicio implements ITipoFestivoServicio {
 
   @Override
   public TipoFestivo guardar(TipoFestivo tipoFestivo) {
-    tipoFestivo.setId(0L);
     return tipoFestivoRepositorio.save(tipoFestivo);
   }
 

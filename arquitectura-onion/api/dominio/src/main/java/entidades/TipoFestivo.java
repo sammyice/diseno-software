@@ -15,20 +15,20 @@ public class TipoFestivo {
   @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_tipofestivo")
   @SequenceGenerator(name = "seq_tipofestivo", sequenceName = "seq_tipofestivo", allocationSize = 1)
   @Column(name = "id")
-  private Long id;
+  private int id;
 
-   @Column(name = "tipo", length = 100, unique = true)
+  @Column(name = "tipo", length = 100, unique = true)
   private String tipo;
 
   public TipoFestivo() {
   }
 
-  public TipoFestivo(Long id, String tipo) {
+  public TipoFestivo(int id, String tipo) {
     this.id = id;
     this.tipo = tipo;
   }
 
-  public void setId(Long id) {
+  public void setId(int id) {
     this.id = id;
   }
 
@@ -36,7 +36,7 @@ public class TipoFestivo {
     this.tipo = tipo;
   }
 
-  public Long getId() {
+  public int getId() {
     return id;
   }
 

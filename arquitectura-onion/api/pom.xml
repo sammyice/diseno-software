@@ -17,6 +17,7 @@
 		<module>dominio</module>
 		<module>core</module>
 		<module>aplicacion</module>
+		<module>presentacion</module>
 	</modules>
 	<name>api</name>
 	<description>Demo project for Spring Boot</description>
